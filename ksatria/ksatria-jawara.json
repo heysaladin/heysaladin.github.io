@@ -1,26 +1,26 @@
 [
     {
-        "name": "GUNDALA",
-        "title": "Putra Petir",
-        "power": "thunder",
-        "image": "https://heysaladin.github.io/huntermotorcycles-indonesia/new_web_logo.png"
+        "name": "SI BUTA",
+        "title": "Pendekar Buta",
+        "power": "Sabetan Tongkat",
+        "image": "https://heysaladin.github.io/ksatria/data-images/j1-si-buta.jpg"
     },
     {
-        "name": "GODAM",
+        "name": "MANDALA",
         "title": "Manusia Besi",
-        "power": "pukulan maut",
-        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg"
+        "power": "Hantaman Godam",
+        "image": "https://heysaladin.github.io/ksatria/data-images/j2-mandala.jpg"
     },
     {
-        "name": "SRI ASIH",
-        "title": "Wanita Super",
-        "power": "thunder",
-        "image": "https://heysaladin.github.io/huntermotorcycles-indonesia/new_web_logo.png"
+        "name": "BM. ELANG",
+        "title": "Wanita Jawara",
+        "power": "Pecut Sakti",
+        "image": "https://heysaladin.github.io/ksatria/data-images/j3-bidadari-mata-elang.jpg"
     },
     {
-        "name": "AQUANUS",
-        "title": "manusia besi",
-        "power": "Ahli Adaptasi",
-        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg"
+        "name": "MATA M.",
+        "title": "Mata Malaikat",
+        "power": "Tombak Iblis",
+        "image": "https://heysaladin.github.io/ksatria/data-images/j4-v-mata-malaikat.jpg"
     }
 ]
