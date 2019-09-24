@@ -3,24 +3,78 @@
         "name": "GUNDALA",
         "title": "Putra Petir",
         "power": "Pukulan Petir",
-        "image": "https://heysaladin.github.io/ksatria/data-images/p1-gundala.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p1-gundala.jpg"
     },
     {
         "name": "GODAM",
         "title": "Manusia Besi",
         "power": "Hantaman Godam",
-        "image": "https://heysaladin.github.io/ksatria/data-images/p2-godam.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p2-godam.jpg"
     },
     {
         "name": "SRI ASIH",
         "title": "Wanita Super",
         "power": "Kibasan Selendang",
-        "image": "https://heysaladin.github.io/ksatria/data-images/p3-sri-asih.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p3-sri-asih.jpg"
     },
     {
         "name": "AQUANUS",
         "title": "Ahli Adaptasi",
         "power": "Sinar Pelangi",
-        "image": "https://heysaladin.github.io/ksatria/data-images/p4-aquanus.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p4-aquanus.jpg"
+    },
+    {
+        "name": "TIRA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p5-tira.jpg"
+    },
+    {
+        "name": "MERPATI",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p6-merpati.jpg"
+    },
+    {
+        "name": "VIRGO",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p7-virgo.jpg"
+    },
+    {
+        "name": "K. HALILINTAR",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p8-kapten-halilintar.jpg"
+    },
+    {
+        "name": "NUSANTARA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p9-nusantara.jpg"
+    },
+    {
+        "name": "MAZA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p10-maza.jpg"
+    },
+    {
+        "name": "P. MLAAR",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p11-pangeran-mlaar.jpg"
+    },
+    {
+        "name": "KALONG",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p12-kalong.jpg"
+    },
+    {
+        "name": "SEMBRANI",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p13-sembrani.jpg"
     }
 ]

@@ -3,24 +3,42 @@
         "name": "SI BUTA",
         "title": "Pendekar Buta",
         "power": "Sabetan Tongkat",
-        "image": "https://heysaladin.github.io/ksatria/data-images/j1-si-buta.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j1-si-buta.jpg"
     },
     {
         "name": "MANDALA",
         "title": "Manusia Besi",
         "power": "Hantaman Godam",
-        "image": "https://heysaladin.github.io/ksatria/data-images/j2-mandala.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j2-mandala.jpg"
     },
     {
         "name": "BM. ELANG",
         "title": "Wanita Jawara",
         "power": "Pecut Sakti",
-        "image": "https://heysaladin.github.io/ksatria/data-images/j3-bidadari-mata-elang.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j3-bidadari-mata-elang.jpg"
     },
     {
         "name": "MATA M.",
         "title": "Mata Malaikat",
         "power": "Tombak Iblis",
-        "image": "https://heysaladin.github.io/ksatria/data-images/j4-v-mata-malaikat.jpg"
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j4-v-mata-malaikat.jpg"
+    },
+    {
+        "name": "S. MAYANG",
+        "title": "Wanita Jawara",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j5-selendang-mayang.jpg"
+    },
+    {
+        "name": "CAMAR",
+        "title": "Wanita Jawara",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j6-camar.jpg"
+    },
+    {
+        "name": "S. BIRU",
+        "title": "Wanita Jawara",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/j7-selendang-biru.jpg"
     }
 ]
