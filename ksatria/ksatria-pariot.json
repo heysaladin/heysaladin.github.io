@@ -1,80 +1,258 @@
 [
     {
+        "id": 1,
+        "category": "patriot",
         "name": "GUNDALA",
         "title": "Putra Petir",
         "power": "Pukulan Petir",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p1-gundala.jpg"
     },
     {
+        "id": 2,
+        "category": "patriot",
         "name": "GODAM",
         "title": "Manusia Besi",
         "power": "Hantaman Godam",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p2-godam.jpg"
     },
     {
+        "id": 3,
+        "category": "patriot",
         "name": "SRI ASIH",
         "title": "Wanita Super",
         "power": "Kibasan Selendang",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p3-sri-asih.jpg"
     },
     {
+        "id": 4,
+        "category": "patriot",
         "name": "AQUANUS",
         "title": "Ahli Adaptasi",
         "power": "Sinar Pelangi",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p4-aquanus.jpg"
     },
     {
+        "id": 5,
+        "category": "patriot",
         "name": "TIRA",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p5-tira.jpg"
     },
     {
+        "id": 6,
+        "category": "patriot",
         "name": "MERPATI",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p6-merpati.jpg"
     },
     {
+        "id": 7,
+        "category": "patriot",
         "name": "VIRGO",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p7-virgo.jpg"
     },
     {
+        "id": 8,
+        "category": "patriot",
         "name": "K. HALILINTAR",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p8-kapten-halilintar.jpg"
     },
     {
+        "id": 9,
+        "category": "patriot",
         "name": "NUSANTARA",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p9-nusantara.jpg"
     },
     {
+        "id": 10,
+        "category": "patriot",
         "name": "MAZA",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p10-maza.jpg"
     },
     {
+        "id": 11,
+        "category": "patriot",
         "name": "P. MLAAR",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p11-pangeran-mlaar.jpg"
     },
     {
+        "id": 12,
+        "category": "patriot",
         "name": "KALONG",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p12-kalong.jpg"
     },
     {
+        "id": 13,
+        "category": "patriot",
         "name": "SEMBRANI",
         "title": "Jagoan",
         "power": "Bela Diri",
         "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p13-sembrani.jpg"
+    },
+    {
+        "id": 14,
+        "category": "patriot",
+        "name": "TORA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p14-tora.jpg"
+    },
+    {
+        "id": 15,
+        "category": "patriot",
+        "name": "BHAYANGKARA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p15-bhayangkara.jpg"
+    },
+    {
+        "id": 16,
+        "category": "patriot",
+        "name": "AGNI",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p16-agni.jpg"
+    },
+    {
+        "id": 17,
+        "category": "patriot",
+        "name": "WAHKIASKETU",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p17-v-wahkiasketu.jpg"
+    },
+    {
+        "id": 18,
+        "category": "patriot",
+        "name": "UNTARA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p18-untara.jpg"
+    },
+    {
+        "id": 19,
+        "category": "patriot",
+        "name": "XREPHUS",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p19-v-xrephus.jpg"
+    },
+    {
+        "id": 20,
+        "category": "patriot",
+        "name": "KOLEKTOR",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p20-v-sang-kolektor.jpg"
+    },
+    {
+        "id": 21,
+        "category": "patriot",
+        "name": "PUTERAGO",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p21-puterago.jpg"
+    },
+    {
+        "id": 22,
+        "category": "patriot",
+        "name": "9 NAGA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p22-v-siluman-9-pintu-naga.jpg"
+    },
+    {
+        "id": 23,
+        "category": "patriot",
+        "name": "PENGKOR",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p23-v-pengkor.jpg"
+    },
+    {
+        "id": 24,
+        "category": "patriot",
+        "name": "MEGANTARA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p24-megantara.jpg"
+    },
+    {
+        "id": 25,
+        "category": "patriot",
+        "name": "KI WILAWUK",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p25-v-ki-wilawuk.jpg"
+    },
+    {
+        "id": 26,
+        "category": "patriot",
+        "name": "KELELAWAR H.",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p26-v-kelelawar-hitam.jpg"
+    },
+    {
+        "id": 27,
+        "category": "patriot",
+        "name": "KANCU R.",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p27-v-kancu-rapethuk.jpg"
+    },
+    {
+        "id": 28,
+        "category": "patriot",
+        "name": "JIN KARTUBI",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p28-jin-kartubi.jpg"
+    },
+    {
+        "id": 29,
+        "category": "patriot",
+        "name": "DR. SETAN",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p29-v-doktor-setan.jpg"
+    },
+    {
+        "id": 30,
+        "category": "patriot",
+        "name": "BOGA",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p30-boga.jpg"
+    },
+    {
+        "id": 31,
+        "category": "patriot",
+        "name": "B. ATLANTIS",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p31-v-bocah-atlantis.jpg"
+    },
+    {
+        "id": 32,
+        "category": "patriot",
+        "name": "GHAZUL",
+        "title": "Jagoan",
+        "power": "Bela Diri",
+        "image": "https://raw.githubusercontent.com/heysaladin/heysaladin.github.io/master/ksatria/data-images/p32-v-ghazul.jpg"
     }
 ]
