@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Avenir Next LT Pro", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
   max-width: 100%;
@@ -51,11 +51,13 @@ h1 {
 }
 
 p {
+  font-family: "Avenir Next LT Pro", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6rem;
 }
 
 a {
+  font-family: "Avenir Next LT Pro", sans-serif;
   color: var(--primary-color);
   text-decoration: none;
   border-bottom: 3px solid transparent;
