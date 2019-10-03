@@ -1,37 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+@import url(
+  https://fonts.googleapis.com/css?family=Lato:400,
+  400italic,
+  700|Sansita+One
+);
 
 :root {
-  --primary-color: #302AE6;
+  --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #424242;
   --bg-color: #fff;
   --heading-color: #292922;
-  --main-image: url('../images/l1.svg');
+  --main-image: url("../images/l1.svg");
   --theme-text: "LIGHT";
-  --illustration-bg: url('../images/lbg.svg');
-  --illustration-2: url('../images/l2.svg');
-  --illustration-3: url('../images/l3.svg');
-  --illustration-4: url('../images/l4.svg');
-  --illustration-5: url('../images/l5.svg');
-  --illustration-6: url('../images/l6.svg');
+  --illustration-bg: url("../images/lbg.svg");
+  --illustration-2: url("../images/l2.svg");
+  --illustration-3: url("../images/l3.svg");
+  --illustration-4: url("../images/l4.svg");
+  --illustration-5: url("../images/l5.svg");
+  --illustration-6: url("../images/l6.svg");
 }
 
 [data-theme="dark"] {
-  --primary-color: #9A97F3;
+  --primary-color: #9a97f3;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   /* --bg-color: #161625; */
-  --bg-color: #2B2B2B;
+  --bg-color: #2b2b2b;
   /* --heading-color: #818cab; */
   --heading-color: #ffffff;
-  --main-image: url('../images/d1.svg');
+  --main-image: url("../images/d1.svg");
   --theme-text: "DARK";
-  --illustration-bg: url('../images/dbg.svg');
-  --illustration-2: url('../images/d2.svg');
-  --illustration-3: url('../images/d3.svg');
-  --illustration-4: url('../images/d4.svg');
-  --illustration-5: url('../images/d5.svg');
-  --illustration-6: url('../images/d6.svg');
+  --illustration-bg: url("../images/dbg.svg");
+  --illustration-2: url("../images/d2.svg");
+  --illustration-3: url("../images/d3.svg");
+  --illustration-4: url("../images/d4.svg");
+  --illustration-5: url("../images/d5.svg");
+  --illustration-6: url("../images/d6.svg");
 }
 
 body {
@@ -67,7 +71,7 @@ a {
 a:hover,
 a:focus {
   /* border-bottom: 3px solid currentColor; */
-  box-shadow: 0 11px 36px 0 rgba(70, 89, 138, .15);
+  box-shadow: 0 11px 36px 0 rgba(70, 89, 138, 0.15);
 }
 
 section {
@@ -122,7 +126,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
   width: 115px;
 }
 
@@ -132,9 +136,9 @@ nav {
   height: 25px;
   left: 4px;
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   width: 68px;
-  font-size: 0.60em;
+  font-size: 0.6em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,13 +148,13 @@ nav {
   padding-top: 1px;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   /* background-color: #66bb6a; */
   background-color: #555555;
   /* border: solid 1px #ccc; */
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   /* transform: translateX(26px); */
   transform: translateX(40px);
   background-color: #333333;
@@ -175,7 +179,7 @@ article.post {
   font-family: "Franchise Free", sans-serif;
   font-size: 5em;
   margin: 0;
-  line-height: 0.90em;
+  line-height: 0.9em;
 }
 
 .button {
@@ -189,7 +193,7 @@ article.post {
 }
 
 .button-main {
-  background-image: linear-gradient(to right, #FC9B00, #FFD800);
+  background-image: linear-gradient(to right, #fc9b00, #ffd800);
 }
 
 #main-section {
@@ -198,19 +202,18 @@ article.post {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  padding-bottom: 20px;
 }
 
 #logo {
   color: var(--heading-color);
   font-family: "Kasting Script", sans-serif;
   font-size: 2rem;
-  color: #EFAE00;
+  color: #efae00;
 }
 
 #simple-footer-text {
   font-size: 0.6em;
-  margin: 20px 0 0;
+  margin: 20px 0;
 }
 
 #main-content {
@@ -286,7 +289,6 @@ article.post {
 }
 
 @media only screen and (max-width: 1060px) {
-
   #main-image {
     display: none;
   }
@@ -310,10 +312,17 @@ article.post {
   #illustration-6 {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 620px) {
+  #main-section {
+    height: auto;
+  }
+
+  #logo {
+    margin-top: 200px;
+  }
+
   #main-title {
     font-size: 3em;
   }
