@@ -198,6 +198,7 @@ article.post {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  padding-bottom: 20px;
 }
 
 #logo {
@@ -209,7 +210,7 @@ article.post {
 
 #simple-footer-text {
   font-size: 0.6em;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 #main-content {
