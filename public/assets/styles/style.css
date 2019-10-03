@@ -205,7 +205,6 @@ article.post {
 }
 
 #logo {
-  color: var(--heading-color);
   font-family: "Kasting Script", sans-serif;
   font-size: 2rem;
   color: #efae00;
@@ -213,8 +212,9 @@ article.post {
 
 #simple-footer-text {
   font-size: 0.6em;
-  margin: 20px 0;
-  display:block;
+  margin: 0;
+  padding: 20px 0;
+  display: block;
 }
 
 #main-content {
@@ -324,6 +324,9 @@ article.post {
 @media only screen and (max-width: 620px) {
   #logo {
     /* margin-top: 200px; */
+    padding: 20px 0;
+    display: block;
+    margin-top: 100px;
   }
 
   #main-title {
