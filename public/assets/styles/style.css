@@ -313,7 +313,9 @@ article.post {
 }
 
 @media only screen and (max-width: 620px) {
-  #main-content {}
+  #main-title {
+    font-size: 3em;
+  }
 
   nav {
     position: fixed;
