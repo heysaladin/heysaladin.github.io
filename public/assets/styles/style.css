@@ -289,6 +289,13 @@ article.post {
   left: 12%;
 }
 
+@media only screen and (max-width: 1280px) {
+  #main-image {
+    top: 1%;
+    right: 3%;
+  }
+}
+
 @media only screen and (max-width: 1060px) {
   #main-image {
     display: none;
