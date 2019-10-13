@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Avenir Next LT Pro';
+    font-family: 'Avenir Next LT Pro Bold';
     src: url('AvenirNextLTPro-Bold.eot');
     src: url('AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
         url('AvenirNextLTPro-Bold.woff2') format('woff2'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Avenir Next LT Pro';
+    font-family: 'Avenir Next LT Pro Regular';
     src: url('AvenirNextLTPro-Regular.eot');
     src: url('AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
         url('AvenirNextLTPro-Regular.woff2') format('woff2'),
