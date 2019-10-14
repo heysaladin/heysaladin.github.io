@@ -1,11 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="94.05" height="86.45" viewBox="0 0 94.05 86.45">
-  <g id="d-i-1" transform="translate(-2.89 -6.25)">
-    <path id="Path_595" data-name="Path 595" d="M79.87,46.24H63.24a5,5,0,0,1-5-5V14.53a5,5,0,0,1,5-5h26.7a5,5,0,0,1,5,5v17Z" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_596" data-name="Path 596" d="M94.94,31.14H84.53a5,5,0,0,0-5,5v10.1" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_597" data-name="Path 597" d="M79.87,90.7H63.24a5,5,0,0,1-5-5V59a5,5,0,0,1,5-5h26.7a5,5,0,0,1,5,5V76Z" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_598" data-name="Path 598" d="M94.94,75.61H84.53a5,5,0,0,0-5,5V90.7" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_599" data-name="Path 599" d="M51,84.57c-.12-2.28-.52-3.72-1.75-7.86-1.83-6.14-11.89-13.77-14.48-15.42s-2.23-6.58-.7-8.47,6.82-1.53,9.65-1.88,1.64-5.41,1.64-5.41,1.77-1.18,1.18-2,.23-1.29.82-1.88-.59-1.41-.47-2.71,2.24-.94,2.94-2-.23-2.7-1.29-3.65-2.94-6.82-2.94-6.82c1.65.59,1.76-.71,1.76-.71-.11-14.35-12-16.82-12-16.82s-22.23-4.47-27.17,10,6.47,24.24,8.47,27.3,2.82,10.35-4.47,18.82c-7,8.12-7.28,18.71-7.3,19.58h0v1a5,5,0,0,0,5,5H47c2.76,0,4-2.24,4-5V84.57Z" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_600" data-name="Path 600" d="M30.23,80.09a30.93,30.93,0,0,1,1.24,8.73" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
-    <path id="Path_601" data-name="Path 601" d="M26.53,72.35a16.63,16.63,0,0,1,1.37,2.12" fill="none" stroke="#6e34b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4477 1410.962 94.05 86.45">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-1 {
+        stroke: #6e34b1;
+      }
+
+      .cls-2 {
+        stroke: #a88eff;
+      }
+    </style>
+  </defs>
+  <g id="d-i-1" transform="translate(4474.11 1404.712)">
+    <path id="Path_595" data-name="Path 595" class="cls-1" d="M79.87,46.24H63.24a5,5,0,0,1-5-5V14.53a5,5,0,0,1,5-5h26.7a5,5,0,0,1,5,5v17Z"/>
+    <path id="Path_596" data-name="Path 596" class="cls-1" d="M94.94,31.14H84.53a5,5,0,0,0-5,5v10.1"/>
+    <path id="Path_597" data-name="Path 597" class="cls-2" d="M79.87,90.7H63.24a5,5,0,0,1-5-5V59a5,5,0,0,1,5-5h26.7a5,5,0,0,1,5,5V76Z"/>
+    <path id="Path_598" data-name="Path 598" class="cls-2" d="M94.94,75.61H84.53a5,5,0,0,0-5,5V90.7"/>
+    <path id="Path_599" data-name="Path 599" class="cls-1" d="M51,84.57c-.12-2.28-.52-3.72-1.75-7.86-1.83-6.14-11.89-13.77-14.48-15.42s-2.23-6.58-.7-8.47,6.82-1.53,9.65-1.88,1.64-5.41,1.64-5.41,1.77-1.18,1.18-2,.23-1.29.82-1.88-.59-1.41-.47-2.71,2.24-.94,2.94-2-.23-2.7-1.29-3.65-2.94-6.82-2.94-6.82c1.65.59,1.76-.71,1.76-.71-.11-14.35-12-16.82-12-16.82s-22.23-4.47-27.17,10,6.47,24.24,8.47,27.3,2.82,10.35-4.47,18.82c-7,8.12-7.28,18.71-7.3,19.58h0v1a5,5,0,0,0,5,5H47c2.76,0,4-2.24,4-5Z"/>
+    <path id="Path_600" data-name="Path 600" class="cls-2" d="M30.23,80.09a30.93,30.93,0,0,1,1.24,8.73"/>
+    <path id="Path_601" data-name="Path 601" class="cls-2" d="M26.53,72.35a16.63,16.63,0,0,1,1.37,2.12"/>
   </g>
 </svg>
