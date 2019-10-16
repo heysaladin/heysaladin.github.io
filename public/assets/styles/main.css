@@ -299,7 +299,7 @@ article.post {
   /* top: 10%;
   right: 4%; */
   top: 0%;
-  right: 0%;
+  right: 5%;
   background-size: 70%;
 }
 
@@ -399,6 +399,13 @@ margin: 2.5em 0 1.65em;
   margin-right: 8px; */
 }
 
+.card-col-5 h3 a {
+  font-family: "Avenir Next LT Pro Bold", sans-serif;
+  font-weight: bold;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
 /* .card-col-5 {
   justify-content: space-between;
 } */
@@ -481,6 +488,10 @@ margin: 2.5em 0 1.65em;
 
 @media only screen and (max-width: 1495px) {
 
+  #main-image {
+    right: 0%;
+  }
+  
   .card-col-5 {
     /* width: 190px; */
     margin-left: 8px;
@@ -558,6 +569,11 @@ margin: 2.5em 0 1.65em;
 }
 
 @media only screen and (max-width: 768px) {
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   nav {
     /* position: fixed; */
     /* left: auto; */
@@ -590,6 +606,7 @@ margin: 2.5em 0 1.65em;
   #footer p {
     text-align: center;
     margin-bottom: 125px;
+    padding: 0 10px;
   }
 
   article.post,
@@ -627,12 +644,9 @@ margin: 2.5em 0 1.65em;
 }
 
 @media only screen and (max-width: 620px) {
-  #logo {
-    /* margin-top: 200px; */
-    /* padding: 20px 0; */
+  /* #logo {
     display: block;
-    /* margin-top: 100px; */
-  }
+  } */
 
   #main-title {
     font-size: 3em;
