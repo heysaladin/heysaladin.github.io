@@ -1,1 +1,0 @@
-Tanpa disadari, layout sangat akrab dengan kita dalam kehidupan sehari-hari. Majalah, koran serta buka yang kita baca, billboard dan bermacam reklame bahkan apa yang kita akses di layar smartphone kita semua pasti mempunyai layout. Terlepas layoutnya baik atau buruk yang pasti layout selalu ada.
