@@ -486,6 +486,13 @@ margin: 2.5em 0 1.65em;
 /* flex: 1; */
 }
 
+.card-head-action a {
+  width: 110px;
+  /* flex: 1; */
+  display: block;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1495px) {
 
   #main-image {
