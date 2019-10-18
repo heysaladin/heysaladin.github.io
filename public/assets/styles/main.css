@@ -11,6 +11,7 @@
   --main-image: url("../images/l-main.svg");
   --theme-text: "LIGHT";
   --illustration-bg: url("../images/l-bg-top.svg");
+  --illustration-bg-bitmap: url("../images/l-bg-top.png");
   --illustration-2: url("../images/l2.svg");
   --illustration-3: url("../images/l3.svg");
   --illustration-4: url("../images/l4.svg");
@@ -23,6 +24,9 @@
   --icon-1: url("../images/l-i-1.svg");
   --icon-2: url("../images/l-i-2.svg");
   --icon-3: url("../images/l-i-3.svg");
+  --icon-1-bitmap: url("../images/l-i-1.png");
+  --icon-2-bitmap: url("../images/l-i-2.png");
+  --icon-3-bitmap: url("../images/l-i-3.png");
 }
 
 [data-theme="dark"] {
@@ -37,6 +41,7 @@
   --main-image: url("../images/d-main.svg");
   --theme-text: "DARK";
   --illustration-bg: url("../images/d-bg-top.svg");
+  --illustration-bg-bitmap: url("../images/d-bg-top.png");
   --illustration-2: url("../images/d2.svg");
   --illustration-3: url("../images/d3.svg");
   --illustration-4: url("../images/d4.svg");
@@ -49,6 +54,9 @@
   --icon-1: url("../images/d-i-1.svg");
   --icon-2: url("../images/d-i-2.svg");
   --icon-3: url("../images/d-i-3.svg");
+  --icon-1-bitmap: url("../images/d-i-1.png");
+  --icon-2-bitmap: url("../images/d-i-2.png");
+  --icon-3-bitmap: url("../images/d-i-3.png");
 }
 
 body {
@@ -629,6 +637,23 @@ article.post {
   .card-head-info {
     padding-right: 0px;
   }
+
+  #main-illustration {
+    background: transparent var(--illustration-bg-bitmap) no-repeat center top;
+  }
+  
+  #icon-1 {
+    background: transparent var(--icon-1-bitmap) no-repeat center center;
+  }
+
+  #icon-2 {
+    background: transparent var(--icon-2-bitmap) no-repeat center center;
+  }
+
+  #icon-3 {
+    background: transparent var(--icon-3-bitmap) no-repeat center center;
+  }
+
 }
 
 @media only screen and (max-width: 725px) {
