@@ -284,7 +284,10 @@ article.post {
 }
 
 #main-illustration {
-  background: transparent var(--illustration-bg) no-repeat center top;
+  background-color: transparent;
+  background-image: var(--illustration-bg);
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
   width: 100%;
@@ -451,18 +454,25 @@ article.post {
 .icon {
   width: 100px;
   height: 100px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #icon-1 {
-  background: transparent var(--icon-1) no-repeat center center;
+  background-image: var(--icon-1);
 }
 
 #icon-2 {
-  background: transparent var(--icon-2) no-repeat center center;
+  background-image: var(--icon-2);
 }
 
 #icon-3 {
-  background: transparent var(--icon-3) no-repeat center center;
+  background-image: var(--icon-3);
 }
 
 .card-full {
@@ -588,6 +598,7 @@ article.post {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
   }
   nav {
     /* position: fixed; */
@@ -638,20 +649,42 @@ article.post {
     padding-right: 0px;
   }
 
+  /*
   #main-illustration {
-    background: transparent var(--illustration-bg-bitmap) no-repeat center top;
+    background-image:  var(--illustration-bg-bitmap);
   }
   
   #icon-1 {
-    background: transparent var(--icon-1-bitmap) no-repeat center center;
+    background-image:  var(--icon-1-bitmap);
   }
 
   #icon-2 {
-    background: transparent var(--icon-2-bitmap) no-repeat center center;
+    background-image:  var(--icon-2-bitmap);
   }
 
   #icon-3 {
-    background: transparent var(--icon-3-bitmap) no-repeat center center;
+    background-image:  var(--icon-3-bitmap);
+  }
+  */
+
+  .icon {
+    /* display: none; */
+    /* background-image: var(--gradient-button); */
+    width: 50px;
+    height: 3px;
+    border-radius: 3px;
+  }
+
+  #icon-1 {
+    background-image: var(--gradient-button);
+  }
+
+  #icon-2 {
+    background-image: var(--gradient-button);
+  }
+
+  #icon-3 {
+    background-image: var(--gradient-button);
   }
 
 }
@@ -688,5 +721,8 @@ article.post {
   nav {
     /* position: fixed;
     bottom: 38px; */
+  }
+  .card-head-action a {
+    width: 100%;
   }
 }
