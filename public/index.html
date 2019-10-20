@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HeySaladin</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <link
-      data-n-head="true"
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/images/favicon.ico"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HeySaladin</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./assets/scripts/slick/slick.css"
-    />
-    <!-- // Add the new slick-theme.css if you want the default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./assets/scripts/slick/slick-theme.css"
-    />
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <link data-n-head="true" rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
-    <!--
+  <link rel="stylesheet" type="text/css" href="./assets/scripts/slick/slick.css" />
+  <!-- // Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="./assets/scripts/slick/slick-theme.css" />
+
+  <!--
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -49,497 +37,444 @@
       }
     </style>
     -->
-    <!--
+  <!--
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     -->
-    <link href="./assets/styles/main.css" rel="stylesheet" />
-    <link href="./assets/fonts/stylesheet.css" rel="stylesheet" />
-    <style>
-      #main-content {
-        /* font-family: 'Avenir Next LT Pro'; */
-        font-size: 22px;
-        /* display: flex;
+  <link href="./assets/styles/main.css" rel="stylesheet" />
+  <link href="./assets/fonts/stylesheet.css" rel="stylesheet" />
+  <style>
+    #main-content {
+      /* font-family: 'Avenir Next LT Pro'; */
+      font-size: 22px;
+      /* display: flex;
       justify-content: center;
       align-items: center; */
-        /* text-align: center; */
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        /* height: 100vh; */
-      }
+      /* text-align: center; */
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      /* height: 100vh; */
+    }
 
-      p {
-        /* font-family: 'Avenir Next LT Pro'; */
-        /* font-size: 22px;
+    p {
+      /* font-family: 'Avenir Next LT Pro'; */
+      /* font-size: 22px;
       color: slategray; */
-        font-size: 0.9em;
-        /* color: #a5a5a5; */
-        line-height: 1.45em;
-        text-align: left;
+      font-size: 0.9em;
+      /* color: #a5a5a5; */
+      line-height: 1.45em;
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+      /* color: black; */
+    }
+  </style>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    !(function () {
+      var t = (window.driftt = window.drift = window.driftt || []);
+      if (!t.init) {
+        if (t.invoked)
+          return void (
+            window.console &&
+            console.error &&
+            console.error("Drift snippet included twice.")
+          );
+        (t.invoked = !0),
+          (t.methods = [
+            "identify",
+            "config",
+            "track",
+            "reset",
+            "debug",
+            "show",
+            "ping",
+            "page",
+            "hide",
+            "off",
+            "on"
+          ]),
+          (t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }),
+          t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }),
+          (t.load = function (t) {
+            var e = 3e5,
+              n = Math.ceil(new Date() / e) * e,
+              o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.crossorigin = "anonymous"),
+              (o.src =
+                "https://js.driftt.com/include/" + n + "/" + t + ".js");
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          });
       }
+    })();
+    drift.SNIPPET_VERSION = "0.3.1";
+    drift.load("vbbg9bntg2nc");
+  </script>
+  <!-- End of Async Drift Code -->
+</head>
 
-      a {
-        text-decoration: none;
-        /* color: black; */
-      }
-    </style>
-
-    <!-- Start of Async Drift Code -->
-    <script>
-      "use strict";
-
-      !(function() {
-        var t = (window.driftt = window.drift = window.driftt || []);
-        if (!t.init) {
-          if (t.invoked)
-            return void (
-              window.console &&
-              console.error &&
-              console.error("Drift snippet included twice.")
-            );
-          (t.invoked = !0),
-            (t.methods = [
-              "identify",
-              "config",
-              "track",
-              "reset",
-              "debug",
-              "show",
-              "ping",
-              "page",
-              "hide",
-              "off",
-              "on"
-            ]),
-            (t.factory = function(e) {
-              return function() {
-                var n = Array.prototype.slice.call(arguments);
-                return n.unshift(e), t.push(n), t;
-              };
-            }),
-            t.methods.forEach(function(e) {
-              t[e] = t.factory(e);
-            }),
-            (t.load = function(t) {
-              var e = 3e5,
-                n = Math.ceil(new Date() / e) * e,
-                o = document.createElement("script");
-              (o.type = "text/javascript"),
-                (o.async = !0),
-                (o.crossorigin = "anonymous"),
-                (o.src =
-                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
-              var i = document.getElementsByTagName("script")[0];
-              i.parentNode.insertBefore(o, i);
-            });
-        }
-      })();
-      drift.SNIPPET_VERSION = "0.3.1";
-      drift.load("vbbg9bntg2nc");
-    </script>
-    <!-- End of Async Drift Code -->
-  </head>
-
-  <body>
-    <div id="main-content">
-      <nav>
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider-theme round"></div>
-          </label>
-          <!-- <em>DARK</em> -->
-        </div>
-      </nav>
-      <section id="main-section">
-        <div class="container">
-          <div id="main">
-            <h1 id="logo">HeySaladin</h1>
-            <article class="post">
-              <p>
-                Hey, I am Saladin...
-              </p>
-              <!-- <div id="main-image"></div> -->
-              <h1 id="main-title">
-                i’m designing<br />
-                solutions for human
-              </h1>
-              <!-- <p class="post-meta"></p> -->
-
-              <p>
-                I create solutions with user experience research, user interface
-                design and frontend development skills.
-              </p>
-
-              <a
-                href="mailto:heysaladin@gmail.com?subject=Hey%20Saladin&body=I%20know%20you%20from%20website%2C%20let%27s%20talk%21"
-                class="button button-main"
-                >LET&apos;S TALK!</a
-              >
-            </article>
-            <p id="simple-footer-text">
-              <!-- Copyright HeySaladin 2019 -->
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="i-do-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>MY SPECIALIZATIONS</h2>
+<body>
+  <div id="main-content">
+    <nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider-theme round"></div>
+        </label>
+        <!-- <em>DARK</em> -->
+      </div>
+    </nav>
+    <section id="main-section">
+      <div class="container">
+        <div id="main">
+          <h1 id="logo">HeySaladin</h1>
+          <article class="post">
             <p>
-              Something that makes me excited.
+              Hey, I am Saladin...
             </p>
-          </div>
-          <div id="i-do">
-            <div class="card card-col-3">
-              <div class="icon" id="icon-1"></div>
-              <h3>UX Research & Ideation</h3>
-              <p>
-                I researching and understanding problem to create better
-                solution ideas.
-              </p>
-            </div>
-            <div class="card card-col-3">
-              <div class="icon" id="icon-2"></div>
-              <h3>UI Design & Interaction</h3>
-              <p>
-                I create a tangible prototyping for users to be able to observe
-                their reactions.
-              </p>
-            </div>
-            <div class="card card-col-3">
-              <div class="icon" id="icon-3"></div>
-              <h3>Frontend Development</h3>
-              <p>
-                I developing specific frontend to keep solutions usable and good
-                performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="profile-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>MY EXPLORATIONS</h2>
+            <!-- <div id="main-image"></div> -->
+            <h1 id="main-title">
+              i’m designing<br />
+              solutions for human
+            </h1>
+            <!-- <p class="post-meta"></p> -->
+
             <p>
-              My works and explorations about UX, UI and Development.
+              I create solutions with user experience research, user interface
+              design and frontend development skills.
             </p>
-          </div>
-          <div id="work">
-            <div class="card card-full" id="work-1">
-              <div class="card-head">
-                <div class="card-head-info">
-                  <h3>Petado</h3>
-                  <p>
-                    An application for saving and adopting abandoned domestic
-                    animals. also part of educating the public about caring for
-                    abandoned animals.
-                  </p>
-                </div>
-                <div class="card-head-action">
-                  <a
-                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=petado"
-                    target="_self"
-                    class="button button-ghost"
-                    >Read Process</a
-                  >
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="slider slider-nav">
-                  <div>
-                    <img
-                      src="https://farooq-agent.web.app/assets/images/works/small/petado.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-full" id="work-2">
-              <div class="card-head">
-                <div class="card-head-info">
-                  <h3>Bimbel Bina Taruna Wiratama</h3>
-                  <p>
-                    An online tutoring application and practice questions as
-                    well as a simulated entrance examination to become a state
-                    civil apparatus.
-                  </p>
-                </div>
-                <div class="card-head-action">
-                  <a
-                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=bimbel-btw"
-                    target="_self"
-                    class="button button-ghost"
-                    >Read Process</a
-                  >
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="slider slider-nav">
-                  <div>
-                    <img
-                      src="https://farooq-agent.web.app/assets/images/works/small/bimbel-btw.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-full" id="work-3">
-              <div class="card-head">
-                <div class="card-head-info">
-                  <h3>DJAVA</h3>
-                  <p>
-                    An application that combines video streaming and selling
-                    goods online.
-                  </p>
-                </div>
-                <div class="card-head-action">
-                  <a
-                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=djava"
-                    target="_self"
-                    class="button button-ghost"
-                    >Read Process</a
-                  >
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="slider slider-nav">
-                  <div>
-                    <img
-                      src="https://farooq-agent.web.app/assets/images/works/small/djava.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-full" id="work-4">
-              <div class="card-head">
-                <div class="card-head-info">
-                  <h3>Temu Dokter</h3>
-                  <p>
-                    Temu Dokter is a doctor's appointment application. Users can
-                    see the doctor's schedule, the list of doctors and their
-                    specialties, even to what services the doctor receives.
-                  </p>
-                </div>
-                <div class="card-head-action">
-                  <a
-                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=temu-dokter"
-                    target="_self"
-                    class="button button-ghost"
-                    >Read Process</a
-                  >
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="slider slider-nav">
-                  <div>
-                    <img
-                      src="https://farooq-agent.web.app/assets/images/works/small/temu-dokter.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-full" id="work-5">
-              <div class="card-head">
-                <div class="card-head-info">
-                  <h3>Oishi Hut</h3>
-                  <p>
-                    This is exploration about app can reservation a restaurant
-                    even can monitor the meal process in queue. Until give a
-                    billing with e-money.
-                  </p>
-                </div>
-                <div class="card-head-action">
-                  <a
-                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=oishi-hut"
-                    target="_self"
-                    class="button button-ghost"
-                    >Read Process</a
-                  >
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="slider slider-nav">
-                  <div>
-                    <img
-                      src="https://farooq-agent.web.app/assets/images/works/small/oishi-hut.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-action">
-              <p>
-                You can also see my other portfolios, which have not been
-                filtered and selected.
-              </p>
-              <a
-                href="https://farooq-agent.web.app/works-gallery/"
-                target="_blank"
-                class="button button-ghost"
-                >View my other portfolios</a
-              >
-            </div>
-          </div>
+
+            <a href="mailto:heysaladin@gmail.com?subject=Hey%20Saladin&body=I%20know%20you%20from%20website%2C%20let%27s%20talk%21"
+              class="button button-main">LET&apos;S TALK!</a>
+          </article>
+          <p id="simple-footer-text">
+            <!-- Copyright HeySaladin 2019 -->
+          </p>
         </div>
-      </section>
-      <section id="profile-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>ABOUT ME</h2>
+      </div>
+    </section>
+    <section id="i-do-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>MY SPECIALIZATIONS</h2>
+          <p>
+            Something that makes me excited.
+          </p>
+        </div>
+        <div id="i-do">
+          <div class="card card-col-3">
+            <div class="icon" id="icon-1"></div>
+            <h3>UX Research & Ideation</h3>
             <p>
-              A few things about me.
+              I researching and understanding problem to create better
+              solution ideas.
             </p>
           </div>
-          <div id="profile">
-            <div class="card card-full">
-              <div class="profile-picture-wrapper">
-                <img alt="Saladin" src="./assets/images/profile.jpg" />
+          <div class="card card-col-3">
+            <div class="icon" id="icon-2"></div>
+            <h3>UI Design & Interaction</h3>
+            <p>
+              I create a tangible prototyping for users to be able to observe
+              their reactions.
+            </p>
+          </div>
+          <div class="card card-col-3">
+            <div class="icon" id="icon-3"></div>
+            <h3>Frontend Development</h3>
+            <p>
+              I developing specific frontend to keep solutions usable and good
+              performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="profile-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>MY EXPLORATIONS</h2>
+          <p>
+            My works and explorations about UX, UI and Development.
+          </p>
+        </div>
+        <div id="work">
+          <div class="card card-full" id="work-1">
+            <div class="card-head">
+              <div class="card-head-info">
+                <h3>Petado</h3>
+                <p>
+                  An application for saving and adopting abandoned domestic
+                  animals. also part of educating the public about caring for
+                  abandoned animals.
+                </p>
               </div>
-              <div class="profile-words">
-                <p>
-                  Let me introduce myself to Muhammad Sholahuddin or commonly
-                  called Adin. I am a graphic designer who is determined to
-                  learn coding and is actively studying user experience design.
-                </p>
-                <p>
-                  User experience research, understanding problems and compiling
-                  idea solutions to a problem are the things I like the most.
-                </p>
-                <p>
-                  Besides that, in the process of compiling a solution there
-                  needs to be a tangible form of the solution or prototyping.
-                  prototyping and experimenting user interactions with the
-                  solutions we propose is a separate skill for me.
-                </p>
-                <p>
-                  To maintain the prototype that we propose remains easy to use
-                  and remains in good performance, frontend development I think
-                  I need to have.
-                </p>
-                <h3>How art influences me to be a designer</h3>
-                <p>
-                  I loved drawing from a young age, when I was in middle school
-                  I knew art, music to theater. all of that makes me have a
-                  sense of art in me. and this really helped me in the design of
-                  the balance of use values ​​and aesthetics.
-                </p>
-                <h3>Me, ukulele and lifting</h3>
-                <p>
-                  I really like music and I like playing ukulele to relax.
-                  besides that I also like lifting (weightlifting and
-                  powerlifting) because lifting teaches me to control my fear
-                  and suppress my ego because to get something we have to be
-                  patient, persevering and trying hard.
-                </p>
-                <div class="profile-action">
-                  <a
-                    href="https://www.linkedin.com/in/heysaladin/"
-                    target="_blank"
-                    class="button button-ghost"
-                    >Read more about me</a
-                  >
+              <div class="card-head-action">
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=petado" target="_self"
+                  class="button button-ghost">Read Process</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="slider slider-nav">
+                <div>
+                  <img src="https://farooq-agent.web.app/assets/images/works/small/petado.jpg" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="contact-section">
-        <div class="container">
-          <div class="section-title">
-            <h2>FIND ME ON SOCIAL MEDIA</h2>
+          <div class="card card-full" id="work-2">
+            <div class="card-head">
+              <div class="card-head-info">
+                <h3>Bimbel Bina Taruna Wiratama</h3>
+                <p>
+                  An online tutoring application and practice questions as
+                  well as a simulated entrance examination to become a state
+                  civil apparatus.
+                </p>
+              </div>
+              <div class="card-head-action">
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=bimbel-btw" target="_self"
+                  class="button button-ghost">Read Process</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="slider slider-nav">
+                <div>
+                  <img src="https://farooq-agent.web.app/assets/images/works/small/bimbel-btw.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-full" id="work-3">
+            <div class="card-head">
+              <div class="card-head-info">
+                <h3>DJAVA</h3>
+                <p>
+                  An application that combines video streaming and selling
+                  goods online.
+                </p>
+              </div>
+              <div class="card-head-action">
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=djava" target="_self"
+                  class="button button-ghost">Read Process</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="slider slider-nav">
+                <div>
+                  <img src="https://farooq-agent.web.app/assets/images/works/small/djava.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-full" id="work-4">
+            <div class="card-head">
+              <div class="card-head-info">
+                <h3>Temu Dokter</h3>
+                <p>
+                  Temu Dokter is a doctor's appointment application. Users can
+                  see the doctor's schedule, the list of doctors and their
+                  specialties, even to what services the doctor receives.
+                </p>
+              </div>
+              <div class="card-head-action">
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=temu-dokter" target="_self"
+                  class="button button-ghost">Read Process</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="slider slider-nav">
+                <div>
+                  <img src="https://farooq-agent.web.app/assets/images/works/small/temu-dokter.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-full" id="work-5">
+            <div class="card-head">
+              <div class="card-head-info">
+                <h3>Oishi Hut</h3>
+                <p>
+                  This is exploration about app can reservation a restaurant
+                  even can monitor the meal process in queue. Until give a
+                  billing with e-money.
+                </p>
+              </div>
+              <div class="card-head-action">
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=oishi-hut" target="_self"
+                  class="button button-ghost">Read Process</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="slider slider-nav">
+                <div>
+                  <img src="https://farooq-agent.web.app/assets/images/works/small/oishi-hut.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-action">
             <p>
-              I exist and i need you to know it.
+              You can also see my other portfolios, which have not been
+              filtered and selected.
+            </p>
+            <a href="https://farooq-agent.web.app/works-gallery/" target="_blank" class="button button-ghost">View my
+              other portfolios</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="profile-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>ABOUT ME</h2>
+          <p>
+            A few things about me.
+          </p>
+        </div>
+        <div id="profile">
+          <div class="card card-full">
+            <div class="profile-picture-wrapper">
+              <img alt="Saladin" src="./assets/images/profile.jpg" />
+            </div>
+            <div class="profile-words">
+              <p>
+                Let me introduce myself to Muhammad Sholahuddin or commonly
+                called Adin. I am a graphic designer who is determined to
+                learn coding and is actively studying user experience design.
+              </p>
+              <p>
+                User experience research, understanding problems and compiling
+                idea solutions to a problem are the things I like the most.
+              </p>
+              <p>
+                Besides that, in the process of compiling a solution there
+                needs to be a tangible form of the solution or prototyping.
+                prototyping and experimenting user interactions with the
+                solutions we propose is a separate skill for me.
+              </p>
+              <p>
+                To maintain the prototype that we propose remains easy to use
+                and remains in good performance, frontend development I think
+                I need to have.
+              </p>
+              <h3>How art influences me to be a designer</h3>
+              <p>
+                I loved drawing from a young age, when I was in middle school
+                I knew art, music to theater. all of that makes me have a
+                sense of art in me. and this really helped me in the design of
+                the balance of use values ​​and aesthetics.
+              </p>
+              <h3>Me, ukulele and lifting</h3>
+              <p>
+                I really like music and I like playing ukulele to relax.
+                besides that I also like lifting (weightlifting and
+                powerlifting) because lifting teaches me to control my fear
+                and suppress my ego because to get something we have to be
+                patient, persevering and trying hard.
+              </p>
+              <div class="profile-action">
+                <a href="https://www.linkedin.com/in/heysaladin/" target="_blank" class="button button-ghost">Read more
+                  about me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>FIND ME ON SOCIAL MEDIA</h2>
+          <p>
+            I exist and i need you to know it.
+          </p>
+        </div>
+        <div id="contact">
+          <div class="card card-col-5">
+            <h3>
+              <a href="https://dribbble.com/heysaladin/" target="_blank">Dribbble</a>
+            </h3>
+            <p>
+              My quick shots.
             </p>
           </div>
-          <div id="contact">
-            <div class="card card-col-5">
-              <h3>
-                <a href="https://dribbble.com/heysaladin/" target="_blank"
-                  >Dribbble</a
-                >
-              </h3>
-              <p>
-                My quick shots.
-              </p>
-            </div>
-            <div class="card card-col-5">
-              <h3>
-                <a
-                  href="https://www.instagram.com/heyheysaladin/"
-                  target="_blank"
-                  >Instagram</a
-                >
-              </h3>
-              <p>
-                To show that I exist.
-              </p>
-            </div>
-            <div class="card card-col-5">
-              <h3>
-                <a href="https://www.behance.net/heysaladin/" target="_blank"
-                  >Behance</a
-                >
-              </h3>
-              <p>
-                My short stories.
-              </p>
-            </div>
-            <div class="card card-col-5">
-              <h3>
-                <a href="https://medium.com/@heysaladin/" target="_blank"
-                  >Medium</a
-                >
-              </h3>
-              <p>
-                My long stories.
-              </p>
-            </div>
-            <div class="card card-col-5">
-              <h3>
-                <a href="https://github.com/heysaladin/" target="_blank"
-                  >Github</a
-                >
-              </h3>
-              <p>
-                My piece of code.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="footer-section">
-        <div class="container">
-          <div id="footer">
+          <div class="card card-col-5">
+            <h3>
+              <a href="https://www.instagram.com/heyheysaladin/" target="_blank">Instagram</a>
+            </h3>
             <p>
-              Design and Code from scratch by Saladin 2019.
+              To show that I exist.
+            </p>
+          </div>
+          <div class="card card-col-5">
+            <h3>
+              <a href="https://www.behance.net/heysaladin/" target="_blank">Behance</a>
+            </h3>
+            <p>
+              My short stories.
+            </p>
+          </div>
+          <div class="card card-col-5">
+            <h3>
+              <a href="https://medium.com/@heysaladin/" target="_blank">Medium</a>
+            </h3>
+            <p>
+              My long stories.
+            </p>
+          </div>
+          <div class="card card-col-5">
+            <h3>
+              <a href="https://github.com/heysaladin/" target="_blank">Github</a>
+            </h3>
+            <p>
+              My piece of code.
             </p>
           </div>
         </div>
-      </section>
-    </div>
-    <div id="main-illustration">
-      <div id="main-image"></div>
-      <!-- <div id="illustration-2"></div>
+      </div>
+    </section>
+    <section id="footer-section">
+      <div class="container">
+        <div id="footer">
+          <p>
+            Design and Code from scratch by Saladin 2019.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="main-illustration">
+    <div id="main-image"></div>
+    <!-- <div id="illustration-2"></div>
     <div id="illustration-3"></div>
     <div id="illustration-4"></div>
     <div id="illustration-5"></div>
     <div id="illustration-6"></div> -->
-    </div>
+  </div>
 
-    <!--
+  <!--
     <div id="message">
       <h1>HeySaladin</h1>
       <p>UX Enthusiast, UI Designer and Frontend Developer</p>
     </div>
     -->
-    <!--
+  <!--
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -563,54 +498,59 @@
       });
     </script>
     -->
-    <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/main.js"></script>
 
-    <style>
+  <style>
+    .slider div img {
+      display: block;
+      margin: 0 auto;
+      /* width: 65%; */
+      max-height: 768px;
+      border-radius: 5px;
+    }
+
+    .slick-dots {
+      height: 12px;
+    }
+
+    @media only screen and (max-width: 768px) {
       .slider div img {
-        display: block;
-        margin: 0 auto;
-        /* width: 65%; */
-        max-height: 768px;
-        border-radius: 5px;
+        width: 100%;
+        max-height: auto;
       }
-      .slick-dots {
-        height: 12px;
-      }
+    }
+  </style>
 
-      @media only screen and (max-width: 768px) {
-        .slider div img {
-          width: 100%;
-          max-height: auto;
-        }
-      }
-    </style>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/slick/slick.min.js"></script>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./assets/scripts/slick/slick.min.js"
-    ></script>
+  <script type="text/javascript">
+    $(".slider-nav").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      focusOnSelect: true
+    });
 
-    <script type="text/javascript">
-      $(".slider-nav").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        focusOnSelect: true
-      });
+    $("a[data-slide]").click(function (e) {
+      e.preventDefault();
+      var slideno = $(this).data("slide");
+      $(".slider-nav").slick("slickGoTo", slideno - 1);
+    });
+  </script>
 
-      $("a[data-slide]").click(function(e) {
-        e.preventDefault();
-        var slideno = $(this).data("slide");
-        $(".slider-nav").slick("slickGoTo", slideno - 1);
-      });
-    </script>
-  </body>
+  <script type="text/javascript">
+    var mainElement = document.getElementById('main');
+    var mainOffsetHeight = mainElement.offsetHeight;
+    // var mainIllustrationElement = document.getElementById('main-illustration');
+    // var mainOffsetHeight = mainIllustrationElement.offsetHeight;
+    if (mainOffsetHeight < 660) {
+      mainElement.setAttribute("style", "height:auto");
+      // mainIllustrationElement.setAttribute("style", "height:auto");
+    }
+  </script>
+
+</body>
+
 </html>
