@@ -413,6 +413,16 @@ article.post {
   margin-right: 8px; */
 }
 
+.card-col-7 {
+  width: 100px;
+  margin: 5px;
+}
+
+.card-col-7 p {
+ margin-top: 25px;
+ text-align: center;
+}
+
 .card-col-5 h3 a {
   font-family: "Avenir Next LT Pro Bold", sans-serif;
   font-weight: bold;
