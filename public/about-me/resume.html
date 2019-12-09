@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saladin's Resume | Farooqa</title>
+    <link
+      data-n-head="true"
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Eksell"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=ProximaNova"
+      rel="stylesheet"
+    />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+    <link href="../assets/styles/main.css" rel="stylesheet" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145097646-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-145097646-1");
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <!-- <em>DARK</em> -->
+      </div>
+    </nav>
+
+    <div class="header">
+      <div class="header-left">
+        <a href="../"
+          ><span id="arrow-back"></span> <span id="logo">HeySaladin</span></a
+        >
+      </div>
+    </div>
+    <!-- <h1 style="font-size: 10em; display: none;" id="notFound">404</h1> -->
+    <div id="content">
+      <section id="i-do-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>MY SPECIALIZATIONS</h2>
+            <p>
+              Something that makes me excited.
+            </p>
+          </div>
+          <div id="i-do">
+            <div class="card card-col-3">
+              <div class="icon" id="icon-1"></div>
+              <h3>UX Research & Ideation</h3>
+              <p>
+                I researching and understanding problem to create better
+                solution ideas.
+              </p>
+            </div>
+            <div class="card card-col-3">
+              <div class="icon" id="icon-2"></div>
+              <h3>UI Design & Interaction</h3>
+              <p>
+                I create a tangible prototyping for users to be able to observe
+                their reactions.
+              </p>
+            </div>
+            <div class="card card-col-3">
+              <div class="icon" id="icon-3"></div>
+              <h3>Frontend Development</h3>
+              <p>
+                I developing specific frontend to keep solutions usable and good
+                performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="action-block">
+      <div class="list-content">
+        <a class="button button-ghost" onclick="goBack()">back</a>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <style>
+      body {
+        /* margin: 0; */
+        padding: 0;
+        width: 100%;
+        /* color: var(--font-color); */
+
+        /* font-family: "Avenir Next LT Pro", sans-serif; */
+        background-color: var(--bg-color);
+        color: var(--font-color);
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: calc(1rem + 0.25vh);
+      }
+
+      #logo {
+        font-family: "Kasting Script", sans-serif;
+        font-size: 2rem;
+        color: #efae00;
+        text-transform: capitalize;
+        /* margin-top: 35px; */
+      }
+
+      /* nav {
+        margin-top: 40px;
+      } */
+
+      /* .slider {
+        height: 32px;
+      } */
+      .section-title p {
+        text-align: center;
+        margin: 0 0 0.85em;
+      }
+
+      @media only screen and (max-width: 768px) {
+        nav {
+          /* position: fixed; */
+          /* left: auto; */
+          right: 45px;
+          top: 5px;
+          /* bottom: auto; */
+        }
+      }
+      .header {
+        height: 0;
+        margin-bottom: 100px;
+      }
+
+      /* # Fonts ---------------------------------------------------------------------------------------------------- */
+      @font-face {
+        font-family: "ProximaNova";
+        font-weight: bold;
+        font-style: italic;
+        src: url("./assets/fonts/2E39B5_0_0.eot");
+        src: url("./assets/fonts/2E39B5_0_0.eot?#iefix")
+            format("embedded-opentype"),
+          url("./assets/fonts/2E39B5_0_0.woff2") format("woff2"),
+          url("./assets/fonts/2E39B5_0_0.woff") format("woff"),
+          url("./assets/fonts/2E39B5_0_0.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "ProximaNova";
+        font-weight: bold;
+        font-style: normal;
+        src: url("./assets/fonts/2E39B5_1_0.eot");
+        src: url("./assets/fonts/2E39B5_1_0.eot?#iefix")
+            format("embedded-opentype"),
+          url("./assets/fonts/2E39B5_1_0.woff2") format("woff2"),
+          url("./assets/fonts/2E39B5_1_0.woff") format("woff"),
+          url("./assets/fonts/2E39B5_1_0.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "ProximaNova";
+        font-weight: normal;
+        font-style: normal;
+        src: url("./assets/fonts/2E39B5_3_0.eot");
+        src: url("./assets/fonts/2E39B5_3_0.eot?#iefix")
+            format("embedded-opentype"),
+          url("./assets/fonts/2E39B5_3_0.woff2") format("woff2"),
+          url("./assets/fonts/2E39B5_3_0.woff") format("woff"),
+          url("./assets/fonts/2E39B5_3_0.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "ProximaNova";
+        font-weight: normal;
+        font-style: italic;
+        src: url("./assets/fonts/2E39B5_4_0.eot");
+        src: url("./assets/fonts/2E39B5_4_0.eot?#iefix")
+            format("embedded-opentype"),
+          url("./assets/fonts/2E39B5_4_0.woff2") format("woff2"),
+          url("./assets/fonts/2E39B5_4_0.woff") format("woff"),
+          url("./assets/fonts/2E39B5_4_0.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Eksell";
+        src: url(./assets/fonts/Eksell-Medium-b09c334bd30c49aa4021630d77eb5057d847f773c7022f900f926ae57df3f2f2.woff2)
+          format("woff2");
+      }
+
+      .header {
+        padding: 25px 18px 0;
+        /* margin-bottom: 35px; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .header-left {
+        width: 200px;
+
+        text-align: left;
+      }
+
+      .header-left a {
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--font-color);
+
+        font-family: "ProximaNova", sans-serif;
+        text-transform: uppercase;
+        /* padding: 20px;
+        border-radius: 5px; */
+        text-align: left;
+        letter-spacing: 2px;
+        justify-content: flex-start;
+        align-items: center;
+
+        /* display: block; */
+        /* width: 100%; */
+        /* margin-left: 90px; */
+        /* margin-top: 15px; */
+        /* border: 1px solid #ddd; */
+        /* background: #ffffff; */
+        /* border-color: #cccccc; */
+        /* color: #333333; */
+
+        width: 90px;
+      }
+
+      #arrow-back {
+        display: block;
+        /* content: ""; */
+        /* background: url("./assets/images/backwhite.svg") left center no-repeat transparent; */
+        /* background: var(--arrow) left center no-repeat transparent; */
+        width: 24px;
+        height: 20px;
+        /* display: inline-block; */
+      }
+
+      .header-left a span {
+        height: 20px;
+      }
+
+      .action-block {
+        padding: 100px 25px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .action-block .list-content {
+        width: 200px;
+      }
+
+      .list-content {
+        text-align: left;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--font-color);
+      }
+
+      .button {
+        font-family: "ProximaNova", sans-serif;
+        text-transform: uppercase;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+
+      .button-ghost {
+        display: block;
+        /* width: 100%; */
+        /* margin-left: 90px; */
+        /* margin-top: 15px; */
+        /* border: 1px solid #ddd; */
+        border: var(--border);
+        /* background: #ffffff; */
+        /* border-color: #cccccc; */
+        color: var(--font-color);
+      }
+
+      #content {
+        width: 100%;
+        /* padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto; */
+        /* max-width: 900px; */
+        /* padding: 15px; */
+
+        color: var(--font-color);
+        /* color: var(--paragraph); */
+        font-family: "ProximaNova", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.625;
+
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      #content > * {
+        padding: 0 25px;
+      }
+
+      h1 {
+        /* font-family: "Eksell", sans-serif;
+        height: 6rem;
+        line-height: 6rem;
+        margin: 0;
+        text-align: center; */
+
+        font-family: "Eksell", sans-serif;
+        font-size: 4.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 1.625em;
+        padding: 0;
+      }
+
+      #myBtn {
+        font-family: "ProximaNova", sans-serif;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: var(--middle);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 15px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+
+      .type {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .meta {
+        text-align: center;
+        /* color: #999; */
+        margin-bottom: 50px;
+        font-size: 0.95em;
+      }
+
+      .caption {
+        text-align: center;
+        font-size: 0.95em;
+        margin-bottom: 50px;
+      }
+
+      #content img {
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 5px;
+        /* width: 100%; */
+        height: auto;
+        margin-bottom: -10px;
+        display: block;
+        max-width: 100%;
+      }
+
+      #content ul,
+      #content ol {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -1em;
+        margin-bottom: 1.625em;
+      }
+
+      #content table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        /* width: 100%; */
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #content table td,
+      #content table th {
+        /* border: 1px solid #ddd; */
+        border: var(--border);
+        padding: 8px;
+      }
+
+      #content table tr:nth-child(even) {
+        /* background-color: #f2f2f2; */
+        /* background-color: var(--middle); */
+      }
+
+      #content table tr:hover {
+        background-color: #ddd;
+      }
+
+      #content table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        /* background-color: #dddddd; */
+        /* background-color: var(--middle); */
+        color: var(--font-color);
+      }
+
+      #content blockquote {
+        padding: 0px 25px 0px !important;
+        line-height: 46px;
+        font-size: 30px;
+        color: var(--font-color);
+        /* color: rgba(0, 0, 0, 0.54); */
+      }
+
+      #content pre {
+        padding: 10px 15px 5px !important;
+        overflow-x: auto;
+        border-radius: 5px;
+        /* border: 1px solid #e5e5e5; */
+        border: var(--border);
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      #content hr {
+        margin-left: 25px;
+        margin-right: 25px;
+        border: 0;
+        border-top: 1px solid var(--middle-text);
+      }
+
+      #content code {
+        color: var(--font-color);
+        /* font-size: 13px; */
+        /* background: #f8f8f8;
+      border-radius: 5px;
+      border: 1px solid #e5e5e5;
+      padding: 2px 4px; */
+      }
+
+      #content a {
+        color: #6491b2;
+        text-decoration: none;
+      }
+
+      #content a:hover,
+      #content a:active {
+        color: #4f738d;
+        text-decoration: underline;
+      }
+
+      #content > object {
+        width: 94.5%;
+        height: 70vh;
+      }
+
+      #content > object p {
+        padding: 0 25px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .meta {
+          margin-bottom: 40px;
+        }
+
+        #content > object {
+          width: 92%;
+          height: 40vh;
+        }
+      }
+
+      /*------------*/
+
+      /*------------*/
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script
+      src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+      integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+      crossorigin=""
+    ></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.0/markdown-it.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.1/markdown-it-footnote.js"></script> -->
+
+    <script>
+      // document.getElementById("date").innerHTML = moment(
+      //   document.getElementById("date").textContent
+      // ).format("dddd, MMMM Do YYYY");
+      function goBack() {
+        //window.history.back();
+        if (history.length > 2) {
+          window.history.back();
+        } else {
+          //window.close();
+
+          // Simulate a mouse click:
+          window.location.href = "https://farooq-agent.web.app/";
+
+          // Simulate an HTTP redirect:
+          // window.location.replace("https://farooq-agent.web.app/");
+        }
+      }
+    </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        /*
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        */
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+    <script src="./assets/scripts/script.js"></script>
+    <!-- <script src="./assets/scripts/script-story-of-my-life.js"></script> -->
+  </body>
+</html>
