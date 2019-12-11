@@ -956,12 +956,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
         function goBack() {
+            window.history.back();
+            /*
             if (history.length > 2) {
                 window.history.back();
             } else {
                 // Simulate a mouse click:
                 window.location.href = "https://farooq-agent.web.app/";
             }
+            */
         }
     </script>
     <script>
