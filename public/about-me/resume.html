@@ -37,7 +37,7 @@
 
   <div class="header">
     <div class="header-left">
-      <a href="../"> <span id="logo">HeySaladin</span></a>
+      <a href="../" id="logo-anchor"> <span id="logo">HeySaladin</span></a>
     </div>
   </div>
   <div id="content">
@@ -111,7 +111,7 @@
             <div class="profile-words">
               <h3>26 Tahun</h3>
               <p>
-                Place, Date of Birth: Tuban, 24 Maret 1993
+                Place, Date of Birth: Tuban, March 24, 1993
                 <br />
                 Address: Jl. Pulau Kawe, Gang 1, No. 2, Denpasar Barat, Kota Denpasar, Bali, Indonesia
               </p>
@@ -879,7 +879,7 @@ Swagger is a tool to document RestAPI more regularly and clearly so that it will
             Download Saladin's Resume in English version.
           </p>
           <h3>
-            <a class="button-text" href="https://dribbble.com/heysaladin/" target="_blank">English</a>
+            <a class="button-text" href="https://drive.google.com/file/d/1K1gkTGAq8mHOKAOmDtVEldqRiXMLIZyC/view?usp=sharing" target="_blank">English</a>
           </h3>
         </div>
         <div class="card card-col-5">
@@ -887,7 +887,7 @@ Swagger is a tool to document RestAPI more regularly and clearly so that it will
             Unduh Resume (CV) dari Saladin dalam Bahasa Indonesia.
           </p>
           <h3>
-            <a class="button-text" href="https://www.instagram.com/heyheysaladin/" target="_blank">Bahasa Indonesia</a>
+            <a class="button-text" href="https://drive.google.com/file/d/1jE6LkeDsTDHK99xDQ5izC5RNzRSt86lE/view?usp=sharing" target="_blank">Bahasa Indonesia</a>
           </h3>
         </div>
       </div>
@@ -914,7 +914,8 @@ Swagger is a tool to document RestAPI more regularly and clearly so that it will
   </div>
   <div class="action-block">
     <div class="list-content">
-      <a class="button button-ghost" onclick="goBack()">back</a>
+      <a class="button button-ghost" href="goBack()">back to home</a>
+      <!-- <a class="button button-ghost" onclick="goBack()">back</a> -->
     </div>
   </div>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -1336,6 +1337,10 @@ Swagger is a tool to document RestAPI more regularly and clearly so that it will
         width: 92%;
         height: 40vh;
       }
+    }
+
+    #logo-anchor:hover {
+      box-shadow: none;
     }
   </style>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
