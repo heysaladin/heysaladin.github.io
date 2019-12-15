@@ -81,32 +81,32 @@
       var t = (window.driftt = window.drift = window.driftt || []);
       if (!t.init) {
         if (t.invoked)
-          return void (
+          return void(
             window.console &&
             console.error &&
             console.error("Drift snippet included twice.")
           );
         (t.invoked = !0),
-          (t.methods = [
-            "identify",
-            "config",
-            "track",
-            "reset",
-            "debug",
-            "show",
-            "ping",
-            "page",
-            "hide",
-            "off",
-            "on"
-          ]),
-          (t.factory = function (e) {
-            return function () {
-              var n = Array.prototype.slice.call(arguments);
-              return n.unshift(e), t.push(n), t;
-            };
-          }),
-          t.methods.forEach(function (e) {
+        (t.methods = [
+          "identify",
+          "config",
+          "track",
+          "reset",
+          "debug",
+          "show",
+          "ping",
+          "page",
+          "hide",
+          "off",
+          "on"
+        ]),
+        (t.factory = function (e) {
+          return function () {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }),
+        t.methods.forEach(function (e) {
             t[e] = t.factory(e);
           }),
           (t.load = function (t) {
@@ -114,10 +114,10 @@
               n = Math.ceil(new Date() / e) * e,
               o = document.createElement("script");
             (o.type = "text/javascript"),
-              (o.async = !0),
-              (o.crossorigin = "anonymous"),
-              (o.src =
-                "https://js.driftt.com/include/" + n + "/" + t + ".js");
+            (o.async = !0),
+            (o.crossorigin = "anonymous"),
+            (o.src =
+              "https://js.driftt.com/include/" + n + "/" + t + ".js");
             var i = document.getElementsByTagName("script")[0];
             i.parentNode.insertBefore(o, i);
           });
@@ -182,24 +182,21 @@
             <div class="icon" id="icon-1"></div>
             <h3>UX Research & Ideation</h3>
             <p>
-              I researching and understanding problem to create better
-              solution ideas.
+              Conduct research to understand a problem, define what can be done & design solutions to solve the problem.
             </p>
           </div>
           <div class="card card-col-3">
             <div class="icon" id="icon-2"></div>
             <h3>UI Design & Interaction</h3>
             <p>
-              I create a tangible prototyping for users to be able to observe
-              their reactions.
+              Creating a user interface & interaction in the form of a prototype of a product to be able to solve a problem while still being easy to use by the user.
             </p>
           </div>
           <div class="card card-col-3">
             <div class="icon" id="icon-3"></div>
             <h3>Frontend Development</h3>
             <p>
-              I developing specific frontend to keep solutions usable and good
-              performance.
+              Creating the appearance of a digital product (web, app) by using programming technology to maintain design consistency but performance remains good.
             </p>
           </div>
         </div>
@@ -254,7 +251,9 @@
               <div class="card-head-info">
                 <h3>BUMEJA Project</h3>
                 <p>
-                  Buku Merah Jambu (Mother & Child Health Book) provided by the Republic of Indonesia Health Service for pregnant women and will be used by information centers and media for recording fetal and children's growth and development up to the age of five.
+                  Buku Merah Jambu (Mother & Child Health Book) provided by the Republic of Indonesia Health Service for
+                  pregnant women and will be used by information centers and media for recording fetal and children's
+                  growth and development up to the age of five.
                 </p>
               </div>
               <div class="card-head-action">
@@ -291,26 +290,31 @@
                 </p>
               </div>
               <div class="card-head-action">
-                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=karma-experience-booking" target="_self"
-                  class="button button-ghost">Read Process</a>
+                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=karma-experience-booking"
+                  target="_self" class="button button-ghost">Read Process</a>
               </div>
             </div>
             <div class="card-body">
               <div class="slider slider-nav">
                 <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-1.jpg" />
+                  <img
+                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-1.jpg" />
                 </div>
                 <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-2.jpg" />
+                  <img
+                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-2.jpg" />
                 </div>
                 <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-3.jpg" />
+                  <img
+                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-3.jpg" />
                 </div>
                 <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-4.jpg" />
+                  <img
+                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-4.jpg" />
                 </div>
                 <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-5.jpg" />
+                  <img
+                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-5.jpg" />
                 </div>
               </div>
             </div>
@@ -341,26 +345,34 @@
             </div>
             <div class="profile-words">
               <p>
-                Hello, my name is Muhammad Sholahuddin (Saladin) who lives on the island of Bali, Indonesia. I am a designer of digital products.
+                Hello, my name is Muhammad Sholahuddin (Saladin) who lives on the island of Bali, Indonesia. I am a
+                designer of digital products.
               </p>
-              <br/>
+              <br />
               <p>
-                Researching user experience, understanding the problem, and compiling an idea solution for a problem are things I really like.
+                Researching user experience, understanding the problem, and compiling an idea solution for a problem are
+                things I really like.
               </p>
-              <br/>
+              <br />
               <p>
-                In the process of compiling a solution there needs to be a tangible form of the solution that is by prototyping. I like to prototype and experiment with user interactions to help find solutions to problems encountered during the research process.
+                In the process of compiling a solution there needs to be a tangible form of the solution that is by
+                prototyping. I like to prototype and experiment with user interactions to help find solutions to
+                problems encountered during the research process.
               </p>
-              <br/>
+              <br />
               <p>
-                To ensure the prototype that I and the team propose remains easy to use and remains in good performance, frontend development also needs to be considered. And I also know little about the frontend development process.
+                To ensure the prototype that I and the team propose remains easy to use and remains in good performance,
+                frontend development also needs to be considered. And I also know little about the frontend development
+                process.
               </p>
-              <br/>
+              <br />
               <h3>How art influenced me to become a designer</h3>
               <p>
-                I like to draw from a young age, when I was in middle school I began to know art, music and theater. All of that made me have a sense of art in me and this really helped me in designing a balance between the value of usability and aesthetics.
+                I like to draw from a young age, when I was in middle school I began to know art, music and theater. All
+                of that made me have a sense of art in me and this really helped me in designing a balance between the
+                value of usability and aesthetics.
               </p>
-              <br/>
+              <br />
               <div class="profile-action">
                 <a href="./about-me/resume.html" target="_blank" class="button button-ghost">Read more
                   about me</a>
@@ -381,9 +393,7 @@
         <div id="contact">
           <div class="card card-col-5">
             <h3>
-              <a href="https://www.linkedin.com/in/heysaladin/" target="_blank"
-                >LinkedIn</a
-              >
+              <a href="https://www.linkedin.com/in/heysaladin/" target="_blank">LinkedIn</a>
             </h3>
             <p>
               My professional info.
@@ -391,9 +401,7 @@
           </div>
           <div class="card card-col-5">
             <h3>
-              <a href="https://www.facebook.com/didien.geonk/" target="_blank"
-                >Facebook</a
-              >
+              <a href="https://www.facebook.com/didien.geonk/" target="_blank">Facebook</a>
             </h3>
             <p>
               My main social media.
