@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HeySaladin</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HeySaladin</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link
+      data-n-head="true"
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/favicon.ico"
+    />
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/6.5.0/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/6.5.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/6.5.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/6.5.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/6.5.0/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
-  <link data-n-head="true" rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/scripts/slick/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/scripts/slick/slick-theme.css"
+    />
 
-  <link rel="stylesheet" type="text/css" href="./assets/scripts/slick/slick.css" />
-  <!-- // Add the new slick-theme.css if you want the default styling -->
-  <link rel="stylesheet" type="text/css" href="./assets/scripts/slick/slick-theme.css" />
-
-  <!--
+    <!--
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -37,393 +49,467 @@
       }
     </style>
     -->
-  <!--
+    <!--
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     -->
-  <link href="./assets/styles/main.css" rel="stylesheet" />
-  <link href="./assets/fonts/stylesheet.css" rel="stylesheet" />
-  <style>
-    #main-content {
-      /* font-family: 'Avenir Next LT Pro'; */
-      font-size: 22px;
-      /* display: flex;
+    <link href="./assets/styles/main.css" rel="stylesheet" />
+    <link href="./assets/fonts/stylesheet.css" rel="stylesheet" />
+    <style>
+      #main-content {
+        /* font-family: 'Avenir Next LT Pro'; */
+        font-size: 22px;
+        /* display: flex;
       justify-content: center;
       align-items: center; */
-      /* text-align: center; */
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      /* height: 100vh; */
-    }
-
-    p {
-      /* font-family: 'Avenir Next LT Pro'; */
-      /* font-size: 22px;
-      color: slategray; */
-      font-size: 0.9em;
-      /* color: #a5a5a5; */
-      line-height: 1.45em;
-      text-align: left;
-    }
-
-    a {
-      text-decoration: none;
-      /* color: black; */
-    }
-  </style>
-
-  <!-- Start of Async Drift Code -->
-  <script>
-    "use strict";
-
-    !(function () {
-      var t = (window.driftt = window.drift = window.driftt || []);
-      if (!t.init) {
-        if (t.invoked)
-          return void(
-            window.console &&
-            console.error &&
-            console.error("Drift snippet included twice.")
-          );
-        (t.invoked = !0),
-        (t.methods = [
-          "identify",
-          "config",
-          "track",
-          "reset",
-          "debug",
-          "show",
-          "ping",
-          "page",
-          "hide",
-          "off",
-          "on"
-        ]),
-        (t.factory = function (e) {
-          return function () {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }),
-        t.methods.forEach(function (e) {
-            t[e] = t.factory(e);
-          }),
-          (t.load = function (t) {
-            var e = 3e5,
-              n = Math.ceil(new Date() / e) * e,
-              o = document.createElement("script");
-            (o.type = "text/javascript"),
-            (o.async = !0),
-            (o.crossorigin = "anonymous"),
-            (o.src =
-              "https://js.driftt.com/include/" + n + "/" + t + ".js");
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(o, i);
-          });
+        /* text-align: center; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* height: 100vh; */
       }
-    })();
-    drift.SNIPPET_VERSION = "0.3.1";
-    drift.load("vbbg9bntg2nc");
-  </script>
-  <!-- End of Async Drift Code -->
-</head>
 
-<body>
-  <div id="main-content">
-    <nav>
-      <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider-theme round"></div>
-        </label>
-        <!-- <em>DARK</em> -->
-      </div>
-    </nav>
-    <section id="main-section">
-      <div class="container">
-        <div id="main">
-          <h1 id="logo">HeySaladin</h1>
-          <article class="post">
-            <p>
-              Hey, I am Saladin...
-            </p>
-            <!-- <div id="main-image"></div> -->
-            <h1 id="main-title">
-              i’m designing<br />
-              solutions for human
-            </h1>
-            <!-- <p class="post-meta"></p> -->
+      p {
+        /* font-family: 'Avenir Next LT Pro'; */
+        /* font-size: 22px;
+      color: slategray; */
+        font-size: 0.9em;
+        /* color: #a5a5a5; */
+        line-height: 1.45em;
+        text-align: left;
+      }
 
-            <p>
-              I create solutions with user experience research, user interface
-              design and frontend development skills.
-            </p>
+      a {
+        text-decoration: none;
+        /* color: black; */
+      }
+    </style>
 
-            <a href="mailto:heysaladin@gmail.com?subject=Hey%20Saladin&body=I%20know%20you%20from%20website%2C%20let%27s%20talk%21"
-              class="button button-main">LET&apos;S TALK!</a>
-          </article>
-          <p id="simple-footer-text">
-            <!-- Copyright HeySaladin 2019 -->
-          </p>
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !(function() {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on"
+            ]),
+            (t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function(t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("vbbg9bntg2nc");
+    </script>
+    <!-- End of Async Drift Code -->
+  </head>
+
+  <body>
+    <div id="main-content">
+      <nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider-theme round"></div>
+          </label>
+          <!-- <em>DARK</em> -->
         </div>
-      </div>
-    </section>
-    <section id="i-do-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>MY SPECIALIZATIONS</h2>
-          <p>
-            Something that makes me excited.
-          </p>
-        </div>
-        <div id="i-do">
-          <div class="card card-col-3">
-            <div class="icon" id="icon-1"></div>
-            <h3>UX Research & Ideation</h3>
-            <p>
-              Conduct research to understand a problem, define what can be done & design solutions to solve the problem.
+      </nav>
+      <section id="main-section">
+        <div class="container">
+          <div id="main">
+            <h1 id="logo">HeySaladin</h1>
+            <article class="post">
+              <p>
+                Hey, I am Saladin...
+              </p>
+              <!-- <div id="main-image"></div> -->
+              <h1 id="main-title">
+                i’m designing<br />
+                solutions for human
+              </h1>
+              <!-- <p class="post-meta"></p> -->
+
+              <p>
+                I create solutions with user experience research, user interface
+                design and frontend development skills.
+              </p>
+
+              <a
+                href="mailto:heysaladin@gmail.com?subject=Hey%20Saladin&body=I%20know%20you%20from%20website%2C%20let%27s%20talk%21"
+                class="button button-main"
+                >LET&apos;S TALK!</a
+              >
+            </article>
+            <p id="simple-footer-text">
+              <!-- Copyright HeySaladin 2019 -->
             </p>
           </div>
-          <div class="card card-col-3">
-            <div class="icon" id="icon-2"></div>
-            <h3>UI Design & Interaction</h3>
+        </div>
+      </section>
+      <section id="i-do-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>MY SPECIALIZATIONS</h2>
             <p>
-              Creating a user interface & interaction in the form of a prototype of a product to be able to solve a problem while still being easy to use by the user.
+              Something that makes me excited.
             </p>
           </div>
-          <div class="card card-col-3">
-            <div class="icon" id="icon-3"></div>
-            <h3>Frontend Development</h3>
-            <p>
-              Creating the appearance of a digital product (web, app) by using programming technology to maintain design consistency but performance remains good.
-            </p>
+          <div id="i-do">
+            <div class="card card-col-3">
+              <div class="icon" id="icon-1"></div>
+              <h3>UX Research & Ideation</h3>
+              <p>
+                Conduct research to understand a problem, define what can be
+                done & design solutions to solve the problem.
+              </p>
+            </div>
+            <div class="card card-col-3">
+              <div class="icon" id="icon-2"></div>
+              <h3>UI Design & Interaction</h3>
+              <p>
+                Creating a user interface & interaction in the form of a
+                prototype of a product to be able to solve a problem while still
+                being easy to use by the user.
+              </p>
+            </div>
+            <div class="card card-col-3">
+              <div class="icon" id="icon-3"></div>
+              <h3>Frontend Development</h3>
+              <p>
+                Creating the appearance of a digital product (web, app) by using
+                programming technology to maintain design consistency but
+                performance remains good.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="profile-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>MY EXPLORATIONS</h2>
-          <p>
-            My works and explorations about UX, UI and Development.
-          </p>
+      </section>
+      <section id="profile-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>MY EXPLORATIONS</h2>
+            <p>
+              My works and explorations about UX, UI and Development.
+            </p>
+          </div>
+          <div id="work">
+            <div class="card card-full" id="work-3">
+              <div class="card-head">
+                <div class="card-head-info">
+                  <h3>Karma Experience Booking</h3>
+                  <p>
+                    An UI design exploration for online booking system of Karma
+                    Group.
+                  </p>
+                </div>
+                <div class="card-head-action">
+                  <a
+                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=karma-experience-booking"
+                    target="_self"
+                    class="button button-ghost"
+                    >Read Process</a
+                  >
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="slider slider-nav">
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-1.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-2.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-3.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-4.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-5.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-full" id="work-2">
+              <div class="card-head">
+                <div class="card-head-info">
+                  <h3>BUMEJA Project</h3>
+                  <p>
+                    Buku Merah Jambu (Mother & Child Health Book) provided by
+                    the Republic of Indonesia Health Service for pregnant women
+                    and will be used by information centers and media for
+                    recording fetal and children's growth and development up to
+                    the age of five.
+                  </p>
+                </div>
+                <div class="card-head-action">
+                  <a
+                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=bumeja"
+                    target="_self"
+                    class="button button-ghost"
+                    >Read Process</a
+                  >
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="slider slider-nav">
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-1.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-2.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-3.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-4.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-5.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-full" id="work-1">
+              <div class="card-head">
+                <div class="card-head-info">
+                  <h3>Petado</h3>
+                  <p>
+                    An application for saving and adopting abandoned domestic
+                    animals. also part of educating the public about caring for
+                    abandoned animals.
+                  </p>
+                </div>
+                <div class="card-head-action">
+                  <a
+                    href="https://farooq-agent.web.app/stories/?type=pages_work&content=petado"
+                    target="_self"
+                    class="button button-ghost"
+                    >Read Process</a
+                  >
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="slider slider-nav">
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-1.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-2.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-3.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-4.jpg"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-5.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-action">
+              <p>
+                You can also see my other portfolios, which have not been
+                filtered and selected.
+              </p>
+              <a
+                href="https://farooq-agent.web.app/works-gallery/"
+                target="_blank"
+                class="button button-ghost"
+                >View my other portfolios</a
+              >
+            </div>
+          </div>
         </div>
-        <div id="work">
-          <div class="card card-full" id="work-1">
-            <div class="card-head">
-              <div class="card-head-info">
-                <h3>Petado</h3>
+      </section>
+      <section id="profile-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>ABOUT ME</h2>
+            <p>
+              A few things about me.
+            </p>
+          </div>
+          <div id="profile">
+            <div class="card card-full">
+              <div class="profile-picture-wrapper">
+                <img alt="Saladin" src="./assets/images/profile.jpg" />
+              </div>
+              <div class="profile-words">
                 <p>
-                  An application for saving and adopting abandoned domestic
-                  animals. also part of educating the public about caring for
-                  abandoned animals.
+                  Hello, my name is Muhammad Sholahuddin (Saladin) who lives on
+                  the island of Bali, Indonesia. I am a designer of digital
+                  products.
                 </p>
-              </div>
-              <div class="card-head-action">
-                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=petado" target="_self"
-                  class="button button-ghost">Read Process</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="slider slider-nav">
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-1.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-2.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-3.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-4.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/186-petado/web-petado-5.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-full" id="work-2">
-            <div class="card-head">
-              <div class="card-head-info">
-                <h3>BUMEJA Project</h3>
+                <br />
                 <p>
-                  Buku Merah Jambu (Mother & Child Health Book) provided by the Republic of Indonesia Health Service for
-                  pregnant women and will be used by information centers and media for recording fetal and children's
-                  growth and development up to the age of five.
+                  Researching user experience, understanding the problem, and
+                  compiling an idea solution for a problem are things I really
+                  like.
                 </p>
-              </div>
-              <div class="card-head-action">
-                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=bumeja" target="_self"
-                  class="button button-ghost">Read Process</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="slider slider-nav">
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-1.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-2.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-3.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-4.jpg" />
-                </div>
-                <div>
-                  <img src="https://farooq-agent.web.app/assets/images/works/details/214-bumeja/web-bumeja-5.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card-full" id="work-3">
-            <div class="card-head">
-              <div class="card-head-info">
-                <h3>Karma Experience Booking</h3>
+                <br />
                 <p>
-                  An UI design exploration for online booking system of Karma Group.
+                  In the process of compiling a solution there needs to be a
+                  tangible form of the solution that is by prototyping. I like
+                  to prototype and experiment with user interactions to help
+                  find solutions to problems encountered during the research
+                  process.
                 </p>
-              </div>
-              <div class="card-head-action">
-                <a href="https://farooq-agent.web.app/stories/?type=pages_work&content=karma-experience-booking"
-                  target="_self" class="button button-ghost">Read Process</a>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="slider slider-nav">
-                <div>
-                  <img
-                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-1.jpg" />
-                </div>
-                <div>
-                  <img
-                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-2.jpg" />
-                </div>
-                <div>
-                  <img
-                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-3.jpg" />
-                </div>
-                <div>
-                  <img
-                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-4.jpg" />
-                </div>
-                <div>
-                  <img
-                    src="https://farooq-agent.web.app/assets/images/works/details/218-karma-experience-booking/web-karma-experience-booking-preview-5.jpg" />
+                <br />
+                <p>
+                  To ensure the prototype that I and the team propose remains
+                  easy to use and remains in good performance, frontend
+                  development also needs to be considered. And I also know
+                  little about the frontend development process.
+                </p>
+                <br />
+                <h3>How art influenced me to become a designer</h3>
+                <p>
+                  I like to draw from a young age, when I was in middle school I
+                  began to know art, music and theater. All of that made me have
+                  a sense of art in me and this really helped me in designing a
+                  balance between the value of usability and aesthetics.
+                </p>
+                <br />
+                <div class="profile-action">
+                  <a
+                    href="./about-me/resume.html"
+                    target="_blank"
+                    class="button button-ghost"
+                    >Read more about me</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="work-action">
+        </div>
+      </section>
+      <section id="contact-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>FIND ME ON SOCIAL MEDIA</h2>
             <p>
-              You can also see my other portfolios, which have not been
-              filtered and selected.
+              I exist and i need you to know it.
             </p>
-            <a href="https://farooq-agent.web.app/works-gallery/" target="_blank" class="button button-ghost">View my
-              other portfolios</a>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="profile-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>ABOUT ME</h2>
-          <p>
-            A few things about me.
-          </p>
-        </div>
-        <div id="profile">
-          <div class="card card-full">
-            <div class="profile-picture-wrapper">
-              <img alt="Saladin" src="./assets/images/profile.jpg" />
+          <div id="contact">
+            <div class="card card-col-5">
+              <h3>
+                <a
+                  href="https://www.linkedin.com/in/heysaladin/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </h3>
+              <p>
+                My professional info.
+              </p>
             </div>
-            <div class="profile-words">
+            <div class="card card-col-5">
+              <h3>
+                <a href="https://www.facebook.com/didien.geonk/" target="_blank"
+                  >Facebook</a
+                >
+              </h3>
               <p>
-                Hello, my name is Muhammad Sholahuddin (Saladin) who lives on the island of Bali, Indonesia. I am a
-                designer of digital products.
+                My main social media.
               </p>
-              <br />
-              <p>
-                Researching user experience, understanding the problem, and compiling an idea solution for a problem are
-                things I really like.
-              </p>
-              <br />
-              <p>
-                In the process of compiling a solution there needs to be a tangible form of the solution that is by
-                prototyping. I like to prototype and experiment with user interactions to help find solutions to
-                problems encountered during the research process.
-              </p>
-              <br />
-              <p>
-                To ensure the prototype that I and the team propose remains easy to use and remains in good performance,
-                frontend development also needs to be considered. And I also know little about the frontend development
-                process.
-              </p>
-              <br />
-              <h3>How art influenced me to become a designer</h3>
-              <p>
-                I like to draw from a young age, when I was in middle school I began to know art, music and theater. All
-                of that made me have a sense of art in me and this really helped me in designing a balance between the
-                value of usability and aesthetics.
-              </p>
-              <br />
-              <div class="profile-action">
-                <a href="./about-me/resume.html" target="_blank" class="button button-ghost">Read more
-                  about me</a>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>FIND ME ON SOCIAL MEDIA</h2>
-          <p>
-            I exist and i need you to know it.
-          </p>
-        </div>
-        <div id="contact">
-          <div class="card card-col-5">
-            <h3>
-              <a href="https://www.linkedin.com/in/heysaladin/" target="_blank">LinkedIn</a>
-            </h3>
-            <p>
-              My professional info.
-            </p>
-          </div>
-          <div class="card card-col-5">
-            <h3>
-              <a href="https://www.facebook.com/didien.geonk/" target="_blank">Facebook</a>
-            </h3>
-            <p>
-              My main social media.
-            </p>
-          </div>
-          <div class="card card-col-5">
-            <h3>
-              <a href="https://dribbble.com/heysaladin/" target="_blank">Dribbble</a>
-            </h3>
-            <p>
-              My quick shots.
-            </p>
-          </div>
-          <div class="card card-col-5">
-            <h3>
-              <a href="https://www.instagram.com/heyheysaladin/" target="_blank">Instagram</a>
-            </h3>
-            <p>
-              To show that I exist.
-            </p>
-          </div>
-          <!--
+            <div class="card card-col-5">
+              <h3>
+                <a href="https://dribbble.com/heysaladin/" target="_blank"
+                  >Dribbble</a
+                >
+              </h3>
+              <p>
+                My quick shots.
+              </p>
+            </div>
+            <div class="card card-col-5">
+              <h3>
+                <a
+                  href="https://www.instagram.com/heyheysaladin/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </h3>
+              <p>
+                To show that I exist.
+              </p>
+            </div>
+            <!--
           <div class="card card-col-5">
             <h3>
               <a href="https://www.behance.net/heysaladin/" target="_blank">Behance</a>
@@ -441,43 +527,45 @@
             </p>
           </div>
           -->
-          <div class="card card-col-5">
-            <h3>
-              <a href="https://github.com/heysaladin/" target="_blank">Github</a>
-            </h3>
+            <div class="card card-col-5">
+              <h3>
+                <a href="https://github.com/heysaladin/" target="_blank"
+                  >Github</a
+                >
+              </h3>
+              <p>
+                My piece of code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer-section">
+        <div class="container">
+          <div id="footer">
             <p>
-              My piece of code.
+              Design and Code from scratch by Saladin 2019.
             </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="footer-section">
-      <div class="container">
-        <div id="footer">
-          <p>
-            Design and Code from scratch by Saladin 2019.
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div id="main-illustration">
-    <div id="main-image"></div>
-    <!-- <div id="illustration-2"></div>
+      </section>
+    </div>
+    <div id="main-illustration">
+      <div id="main-image"></div>
+      <!-- <div id="illustration-2"></div>
     <div id="illustration-3"></div>
     <div id="illustration-4"></div>
     <div id="illustration-5"></div>
     <div id="illustration-6"></div> -->
-  </div>
+    </div>
 
-  <!--
+    <!--
     <div id="message">
       <h1>HeySaladin</h1>
       <p>UX Enthusiast, UI Designer and Frontend Developer</p>
     </div>
     -->
-  <!--
+    <!--
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -501,59 +589,66 @@
       });
     </script>
     -->
-  <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 
-  <style>
-    .slider div img {
-      display: block;
-      margin: 0 auto;
-      /* width: 65%; */
-      max-height: 768px;
-      border-radius: 5px;
-    }
-
-    .slick-dots {
-      height: 12px;
-    }
-
-    @media only screen and (max-width: 768px) {
+    <style>
       .slider div img {
-        width: 100%;
-        max-height: auto;
+        display: block;
+        margin: 0 auto;
+        /* width: 65%; */
+        max-height: 768px;
+        border-radius: 5px;
       }
-    }
-  </style>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="./assets/scripts/slick/slick.min.js"></script>
+      .slick-dots {
+        height: 12px;
+      }
 
-  <script type="text/javascript">
-    $(".slider-nav").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      focusOnSelect: true
-    });
+      @media only screen and (max-width: 768px) {
+        .slider div img {
+          width: 100%;
+          max-height: auto;
+        }
+      }
+    </style>
 
-    $("a[data-slide]").click(function (e) {
-      e.preventDefault();
-      var slideno = $(this).data("slide");
-      $(".slider-nav").slick("slickGoTo", slideno - 1);
-    });
-  </script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./assets/scripts/slick/slick.min.js"
+    ></script>
 
-  <script type="text/javascript">
-    var mainElement = document.getElementById('main');
-    var mainOffsetHeight = mainElement.offsetHeight;
-    // var mainIllustrationElement = document.getElementById('main-illustration');
-    // var mainOffsetHeight = mainIllustrationElement.offsetHeight;
-    if (mainOffsetHeight < 660) {
-      mainElement.setAttribute("style", "height:auto");
-      // mainIllustrationElement.setAttribute("style", "height:auto");
-    }
-  </script>
+    <script type="text/javascript">
+      $(".slider-nav").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        focusOnSelect: true
+      });
 
-</body>
+      $("a[data-slide]").click(function(e) {
+        e.preventDefault();
+        var slideno = $(this).data("slide");
+        $(".slider-nav").slick("slickGoTo", slideno - 1);
+      });
+    </script>
 
+    <script type="text/javascript">
+      var mainElement = document.getElementById("main");
+      var mainOffsetHeight = mainElement.offsetHeight;
+      // var mainIllustrationElement = document.getElementById('main-illustration');
+      // var mainOffsetHeight = mainIllustrationElement.offsetHeight;
+      if (mainOffsetHeight < 660) {
+        mainElement.setAttribute("style", "height:auto");
+        // mainIllustrationElement.setAttribute("style", "height:auto");
+      }
+    </script>
+  </body>
 </html>
