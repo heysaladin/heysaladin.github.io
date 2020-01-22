@@ -448,6 +448,18 @@ article.post {
   flex-wrap: wrap;
 }
 
+#contact-resume {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact-resume>div {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
 #footer {
   margin: 80px 0 40px;
 }
